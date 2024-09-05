@@ -12,6 +12,9 @@ include vendor/xiaomi/cupid/BoardConfigVendor.mk
 
 DEVICE_PATH := device/xiaomi/cupid
 
+# Bootloader
+TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/configs/board/board-info.txt
+
 # Kernel
 device_second_stage_modules := \
     goodix_fod.ko \
@@ -28,8 +31,8 @@ BOARD_VENDOR_KERNEL_MODULES_LOAD += $(device_second_stage_modules) $(device_vend
 BOOT_KERNEL_MODULES += $(device_second_stage_modules)
 
 # Properties
-TARGET_SYSTEM_PROP += $(DEVICE_PATH)/properties/system.prop
-TARGET_VENDOR_PROP += $(DEVICE_PATH)/properties/vendor.prop
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/configs/properties/system.prop
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/configs/properties/vendor.prop
 
 # Screen density
 TARGET_SCREEN_DENSITY := 480
