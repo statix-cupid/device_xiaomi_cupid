@@ -13,6 +13,16 @@ $(call inherit-product, vendor/xiaomi/cupid/cupid-vendor.mk)
 # MiuiCamera
 $(call inherit-product, vendor/xiaomi/camera/miuicamera.mk)
 
+# Kernel
+TARGET_KERNEL_DIR := device/xiaomi/cupid-kernel
+TARGET_KERNEL_VERSION := 5.10
+
+PRODUCT_COPY_FILES += \
+    $(TARGET_KERNEL_DIR)/Image:kernel
+
+# Kernel Headers
+PRODUCT_VENDOR_KERNEL_HEADERS += device/xiaomi/cupid-kernel/kernel-headers
+
 # Overlay
 PRODUCT_PACKAGES += \
     ApertureResCupid \
