@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_cupid.mk
+    $(LOCAL_DIR)/statix_cupid.mk

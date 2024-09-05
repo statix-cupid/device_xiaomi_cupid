@@ -422,6 +422,10 @@
         <item>0:2:15</item>
     </string-array>
 
+
+    <!-- Fingerprint from stock ROM -->
+    <string name="config_stockFingerprint" translatable="false">Xiaomi/cupid_global/cupid:14/UKQ1.230917.001/V816.0.4.0.ULCMIXM:user/release-keys</string>
+
     <!-- The properties of a UDFPS sensor in pixels, in the order listed below: -->
     <integer-array name="config_udfps_sensor_props" translatable="false">
         <item>540</item>
