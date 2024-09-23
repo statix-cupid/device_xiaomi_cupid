@@ -14,8 +14,8 @@ $(call inherit-product, vendor/xiaomi/cupid/cupid-vendor.mk)
 $(call inherit-product, vendor/xiaomi/camera/miuicamera.mk)
 
 # Kernel
-TARGET_KERNEL_DIR := device/xiaomi/cupid-kernel
-TARGET_KERNEL_VERSION := 5.10
+TARGET_KERNEL_DIR ?= device/xiaomi/cupid-kernel
+TARGET_KERNEL_VERSION ?= 5.10
 
 PRODUCT_COPY_FILES += \
     $(TARGET_KERNEL_DIR)/Image:kernel

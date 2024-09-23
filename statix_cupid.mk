@@ -14,6 +14,9 @@ $(call inherit-product, vendor/statix/config/gsm.mk)
 # Include Pixel Launcher
 INCLUDE_PIXEL_LAUNCHER := true
 
+# Go kill yourself.
+TARGET_DISABLE_EPPE := true
+
 PRODUCT_NAME := statix_cupid
 PRODUCT_DEVICE := cupid
 PRODUCT_MANUFACTURER := Xiaomi
